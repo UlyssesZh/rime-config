@@ -1,0 +1,4 @@
+patch:
+  switches/@0/reset: 1
+  switches/@2/reset: 1
+  switches/@3/reset: 1

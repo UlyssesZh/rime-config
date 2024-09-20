@@ -1,0 +1,10 @@
+patch:
+  schema_list:
+    - schema: luna_pinyin
+    - schema: mipa
+    - schema: japanese
+  menu/page_size: 9
+  menu/horizontal: true
+  menu/inline_preedit: false
+  switcher/caption: "菜单"
+  ascii_composer/switch_key/Shift_L: commit_code
