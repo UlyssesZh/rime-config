@@ -2,3 +2,7 @@ patch:
   switches/@0/reset: 1
   switches/@2/reset: 1
   switches/@3/reset: 1
+  switches/@0/states: [ 中, A ]
+  switches/@1/states: [ ◐︎, ● ]
+  switches/@2/states: [ 繁, 简 ]
+  switches/@3/states: [ 。, '.' ]

@@ -10,7 +10,7 @@ patch:
   style/layout/margin_x: 6
   style/layout/margin_y: 6
   style/layout/round_corner: 0
-  style/layout/corner_radius: 0
+  style/layout/corner_radius: 2
   style/layout/candidate_spacing: 10
   style/color_scheme: ulysses
   preset_color_schemes/ulysses:

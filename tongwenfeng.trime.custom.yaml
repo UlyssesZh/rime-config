@@ -1,0 +1,181 @@
+patch:
+  style/auto_caps: false
+  style/horizontal: true
+  style/proximity_correction: true
+  style/text_font: JetBrainsMono[wght].ttf
+  style/key_font: JetBrainsMono[wght].ttf
+  style/symbol_font: JetBrainsMono[wght].ttf
+  style/candidate_font: HanaMinA.ttf
+  style/hanb_font: HanaMinB.ttf
+  style/text_size: 20
+  style/key_height: 32
+  style/key_width: 10
+  style/locale: zh_CN
+  style/key_text_size: 28
+  style/symbol_text_size: 12
+  style/candidate_padding: 5
+  style/candidate_spacing: 0.2
+  style/candidate_text_size: 24
+  style/round_corner: 64
+  style/keyboard_height: 280
+  style/keyboard_height_land: 200
+  style/layout/min_length: 100
+  style/layout/corner_radius: 0
+  style/layout/background: &white 0xffffff
+  preset_color_schemes/default:
+    name: Default
+    back_color: &pink 0xf48fb1
+    hilited_text_color: &black 0x000000
+    text_color: &gray 0x5a464c
+    hilited_candidate_text_color: *black
+    candidate_text_color: *gray
+    keyboard_back_color: &light_pink 0xf8bbd0
+    key_back_color: *light_pink
+    tbs: *gray
+    bkg: &bright_pink 0xfbd9e5
+    benter: &dark_pink 0xe36087
+    tenter: *white
+    bgn: *bright_pink
+  style/window:
+    - {start: "", composition: "%s", end: "", letter_spacing: 0}
+  preset_keys/Shift_L/label: ⇧
+  preset_keys/Shift_L2/label: Select
+  preset_keys/Tab1/label: ↹
+  preset_keys/Return/label: ↵
+  preset_keys/Return1/label: ↵
+  preset_keys/Return2/label: ↵
+  preset_keys/BackSpace/label: ⌫
+  preset_keys/Escape/label: Esc
+  preset_keys/Home/label: Home
+  preset_keys/Insert/label: Ins
+  preset_keys/Delete/label: Del
+  preset_keys/End/label: End
+  preset_keys/Page_Up/label: PgUp
+  preset_keys/Page_Down/label: PgDn
+  preset_keys/Left1/label: ⇐
+  preset_keys/Right1/label: ⇒
+  preset_keys/space/label: ⎵
+  preset_keys/space1/label: ⎵
+  preset_keys/select_all/label: SelAll
+  preset_keys/cut/label: Cut
+  preset_keys/copy/label: Copy
+  preset_keys/paste/label: Paste
+  preset_keys/paste_clip/label: Paste
+  preset_keys/redo/label: Redo
+  preset_keys/undo/label: Undo
+  preset_keys/delimiter/label: ’
+  preset_keys/Menu/label: Lang
+  preset_keys/Settings/label: Settings
+  preset_keys/Keyboard_default/label: Back
+  preset_keys/Keyboard_numberb/label: ↔
+  preset_keys/liquid_keyboard_clipboard/label: Clip
+  preset_keys/liquid_keyboard_switch/label: More
+  preset_keys/liquid_keyboard_emoji/label: Emoji
+  preset_keys/liquid_keyboard_exit/label: Back
+  preset_keys/Theme_settings/label: Theme
+  preset_keys/Color_switch/label: Color
+  preset_keyboards/default/keys:
+    - {click: 1, long_click: '!', key_back_color: bh1, key_text_color: th1}
+    - {click: 2, long_click: '@', key_back_color: bh1, key_text_color: th1}
+    - {click: 3, long_click: '#', key_back_color: bh1, key_text_color: th1}
+    - {click: 4, long_click: '$', key_back_color: bh1, key_text_color: th1}
+    - {click: 5, long_click: '%', key_back_color: bh1, key_text_color: th1}
+    - {click: 6, long_click: '^', key_back_color: bh1, key_text_color: th1}
+    - {click: 7, long_click: '&', key_back_color: bh1, key_text_color: th1}
+    - {click: 8, long_click: '*', key_back_color: bh1, key_text_color: th1}
+    - {click: 9, long_click: '(', key_back_color: bh1, key_text_color: th1}
+    - {click: 0, long_click: ')', key_back_color: bh1, key_text_color: th1}
+
+    - {click: q, long_click: '`', key_back_color: bh1, key_text_color: th1}
+    - {click: w, long_click: '~', key_back_color: bh1, key_text_color: th1}
+    - {click: e, long_click: '-', key_back_color: bh1, key_text_color: th1}
+    - {click: r, long_click: '_', key_back_color: bh1, key_text_color: th1}
+    - {click: t, long_click: '=', key_back_color: bh1, key_text_color: th1}
+    - {click: y, long_click: '+', key_back_color: bh1, key_text_color: th1}
+    - {click: u, long_click: '[', key_back_color: bh1, key_text_color: th1}
+    - {click: i, long_click: ']', key_back_color: bh1, key_text_color: th1}
+    - {click: o, long_click: '{', key_back_color: bh1, key_text_color: th1}
+    - {click: p, long_click: '}', key_back_color: bh1, key_text_color: th1}
+
+    - {width: 5, key_back_color: bh2, key_text_color: th2}
+    - {click: a, long_click: select_all, key_back_color: bh2, key_text_color: th2}
+    - {click: s, long_click: ';', key_back_color: bh2, key_text_color: th2}
+    - {click: d, long_click: ':', key_back_color: bh2, key_text_color: th2}
+    - {click: f, long_click: "'", key_back_color: bh2, key_text_color: th2}
+    - {click: g, long_click: '"', swipe_down: "date_time", key_back_color: bh2, key_text_color: th2}
+    - {click: h, long_click: '<', swipe_down: "+", key_back_color: bh2, key_text_color: th2}
+    - {click: j, long_click: '>', swipe_down: "-", key_back_color: bh2, key_text_color: th2}
+    - {click: k, long_click: '/', swipe_down: "_", key_back_color: bh2, key_text_color: th2}
+    - {click: l, long_click: '?', swipe_down: "=", key_back_color: bh2, key_text_color: th2}
+    - {width: 5, key_back_color: bh2, key_text_color: th2}
+
+    - {click: Shift_L, composing: delimiter, hilited_key_back_color: benter, key_back_color: bbs, key_text_color: tbs}
+    - {click: z, long_click: undo, key_back_color: bh3, key_text_color: th3}
+    - {click: x, long_click: cut, key_back_color: bh3, key_text_color: th3}
+    - {click: c, long_click: copy, key_back_color: bh3, key_text_color: th3}
+    - {click: v, long_click: paste_clip, key_back_color: bh3, key_text_color: th3}
+    - {click: b, long_click: Home, key_back_color: bh3, key_text_color: th3}
+    - {click: n, long_click: End, key_back_color: bh3, key_text_color: th3}
+    - {click: m, long_click: Tab1, key_back_color: bh3, key_text_color: th3}
+    - {click: '.', long_click: ',', key_back_color: bh3, key_text_color: th3}
+    - {click: BackSpace, key_back_color: bbs, key_text_color: tbs}
+
+    - {click: Keyboard_number, width: 15, key_back_color: bgn, key_text_color: tgn}
+    - {click: Menu, long_click: Settings, width: 15, key_back_color: bh4, key_text_color: th4}
+    - {click: space, long_click: Keyboard_numberb, width: 40, key_back_color: bkg, key_text_color: tkg}
+    - {click: liquid_keyboard_switch, long_click: liquid_keyboard_emoji, width: 15, key_back_color: bh4, key_text_color: th4}
+    - {click: Return, composing: Return1, long_click: Escape, width: 15, key_back_color: benter, key_text_color: tenter}
+  preset_keyboards/numberb/keys:
+    - {click: select_all}
+    - {click: Left1}
+    - {click: Up, key_back_color: bgn, key_text_color: tgn}
+    - {click: Right1}
+    - {click: space1, width: 19}
+    - {click: cut}
+    - {click: Left, key_back_color: bgn, key_text_color: tgn}
+    - {click: Shift_L2}
+    - {click: Right, key_back_color: bgn, key_text_color: tgn}
+    - {click: BackSpace, width: 19}
+    - {click: copy}
+    - {click: Home}
+    - {click: Down, key_back_color: bgn, key_text_color: tgn}
+    - {click: End}
+    - {click: Return, width: 19}
+    - {click: paste}
+    - {click: undo}
+    - {click: Tab1}
+    - {click: redo}
+    - {click: Keyboard_default, key_back_color: benter, key_text_color: tenter, width: 19}
+  preset_keyboards/number/keys:
+    - {click: '#'}
+    - {click: '+'}
+    - {click: 1, key_back_color: bgn, key_text_color: tgn}
+    - {click: 2, key_back_color: bgn, key_text_color: tgn}
+    - {click: 3, key_back_color: bgn, key_text_color: tgn}
+    - {click: space1}
+
+    - {click: '%'}
+    - {click: '-'}
+    - {click: 4, key_back_color: bgn, key_text_color: tgn}
+    - {click: 5, key_back_color: bgn, key_text_color: tgn}
+    - {click: 6, key_back_color: bgn, key_text_color: tgn}
+    - {click: BackSpace}
+
+    - {click: ':'}
+    - {click: '*'}
+    - {click: 7, key_back_color: bgn, key_text_color: tgn}
+    - {click: 8, key_back_color: bgn, key_text_color: tgn}
+    - {click: 9, key_back_color: bgn, key_text_color: tgn}
+    - {click: Return}
+
+    - {click: ','}
+    - {click: '/'}
+    - {click: '.'}
+    - {click: 0, key_back_color: bgn, key_text_color: tgn}
+    - {click: '='}
+    - {click: Keyboard_default, key_back_color: benter, key_text_color: tenter}
+  liquid_keyboard/row: 8
+  liquid_keyboard/row_land: 6
+  liquid_keyboard/key_height: 32      #按键高度
+  liquid_keyboard/key_height_land: 32 #横屏模式按键高度
+  liquid_keyboard/single_width: 40    #single类型的按键宽度

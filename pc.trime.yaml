@@ -1,0 +1,73 @@
+config_version: "3.0"
+name: PC
+author: UlyssesZhan
+
+style:
+  auto_caps: false
+  text_font: JetBrainsMono[wght].ttf
+  candidate_font: HanaMinA.ttf
+  hanb_font: HanaMinB.ttf
+  candidate_text_size: 16
+  candidate_use_cursor: true
+  candidate_view_height: 0
+  comment_text_size: 16
+  color_scheme: default
+  horizontal: true
+  horizontal_gap: 1
+  keyboard_padding: 0
+  keyboard_padding_left: 0
+  keyboard_padding_right: 0
+  keyboard_padding_bottom: 0
+  keyboard_padding_land: 0
+  keyboard_padding_land_bottom: 0
+  layout:
+    position: right
+    min_length: 1
+    max_length: 24
+    sticky_lines: 0
+    sticky_lines_land: 0
+    max_entries: 9
+    min_check: 0
+    all_phrases: true
+    border: 1
+    max_width: 400
+    min_width: 40
+    margin_x: 1
+    margin_y: 1
+    margin_bottom: 1
+    line_spacing: 0
+    real_margin: 3
+    spacing: 1
+    round_corner: 2
+    elevation: 0
+    alpha: 0xee
+    movable: false
+  window:
+    - {start: "", composition: "%s", end: "", letter_spacing: 0, end: ""}
+    - {start: "\n", label: "%s", candidate: "%s", comment: "%s", sep: " "} 
+  keyboards: [.default, default]
+  label_text_size: 16
+  latin_locale: en_US
+  locale: zh_CN
+  keyboard_height: 20
+  keyboard_height_land: 20
+  reset_ascii_mode: false
+  text_size: 14
+preset_color_schemes:
+  default:
+    name: Default
+    back_color: &transparent '#00ffffff'
+    hilited_text_color: &black 0x000000
+    text_color: &gray 0x5a464c
+    text_back_color: &white 0xffffff
+    hilited_candidate_text_color: *black
+    candidate_text_color: *black
+    border_color: &rose 0xfc8e9f
+    hilited_back_color: *transparent
+    hilited_candidate_back_color: *rose
+    label_color: *black
+preset_keyboards:
+  default:
+    name: Default
+    lock: true
+    keys: []
