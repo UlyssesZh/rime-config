@@ -7,4 +7,7 @@ patch:
   menu/horizontal: true
   menu/inline_preedit: false
   switcher/caption: "菜单"
+  switcher/hotkeys:
+    - Control+Alt+grave
+  switcher/option_list_separator: /
   ascii_composer/switch_key/Shift_L: commit_code

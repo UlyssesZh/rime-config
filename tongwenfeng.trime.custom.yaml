@@ -105,8 +105,8 @@ patch:
     - {click: g, long_click: '"', swipe_down: "date_time", key_back_color: bh2, key_text_color: th2}
     - {click: h, long_click: '<', swipe_down: "+", key_back_color: bh2, key_text_color: th2}
     - {click: j, long_click: '>', swipe_down: "-", key_back_color: bh2, key_text_color: th2}
-    - {click: k, long_click: '/', swipe_down: "_", key_back_color: bh2, key_text_color: th2}
-    - {click: l, long_click: '?', swipe_down: "=", key_back_color: bh2, key_text_color: th2}
+    - {click: k, long_click: '\', swipe_down: "_", key_back_color: bh2, key_text_color: th2}
+    - {click: l, long_click: '|', swipe_down: "=", key_back_color: bh2, key_text_color: th2}
     - {width: 5, key_back_color: bh2, key_text_color: th2}
 
     - {click: Shift_L, composing: delimiter, hilited_key_back_color: benter, key_back_color: bbs, key_text_color: tbs}
@@ -114,9 +114,9 @@ patch:
     - {click: x, long_click: cut, key_back_color: bh3, key_text_color: th3}
     - {click: c, long_click: copy, key_back_color: bh3, key_text_color: th3}
     - {click: v, long_click: paste_clip, key_back_color: bh3, key_text_color: th3}
-    - {click: b, long_click: Home, key_back_color: bh3, key_text_color: th3}
-    - {click: n, long_click: End, key_back_color: bh3, key_text_color: th3}
-    - {click: m, long_click: Tab1, key_back_color: bh3, key_text_color: th3}
+    - {click: b, long_click: Tab1, key_back_color: bh3, key_text_color: th3}
+    - {click: n, long_click: '/', key_back_color: bh3, key_text_color: th3}
+    - {click: m, long_click: '?', key_back_color: bh3, key_text_color: th3}
     - {click: '.', long_click: ',', key_back_color: bh3, key_text_color: th3}
     - {click: BackSpace, key_back_color: bbs, key_text_color: tbs}
 
