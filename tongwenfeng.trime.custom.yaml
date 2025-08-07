@@ -2,6 +2,7 @@ patch:
   style/auto_caps: false
   style/horizontal: true
   style/proximity_correction: true
+  style/reset_ascii_mode: true
   style/text_font: JetBrainsMono[wght].ttf
   style/key_font: JetBrainsMono[wght].ttf
   style/symbol_font: JetBrainsMono[wght].ttf
@@ -74,6 +75,7 @@ patch:
   preset_keys/liquid_keyboard_exit/label: Back
   preset_keys/Theme_settings/label: Theme
   preset_keys/Color_switch/label: Color
+  preset_keyboards/default/ascii_mode: 1
   preset_keyboards/default/keys:
     - {click: 1, long_click: '!', key_back_color: bh1, key_text_color: th1}
     - {click: 2, long_click: '@', key_back_color: bh1, key_text_color: th1}
