@@ -18,7 +18,7 @@ patch:
   style/candidate_spacing: 0.2
   style/candidate_text_size: 24
   style/round_corner: 64
-  style/keyboard_height: 280
+  #style/keyboard_height: 280 # https://github.com/osfans/trime/issues/1915
   style/keyboard_height_land: 200
   style/layout/min_length: 100
   style/layout/corner_radius: 0
@@ -40,6 +40,11 @@ patch:
   style/window:
     - {start: "", composition: "%s", end: "", letter_spacing: 0}
   preset_keys/Shift_L/label: ⇧
+  preset_keys/key_capslock:
+    label: ' '
+    functional: true
+    send: Shift_L
+    shift_lock: long
   preset_keys/Shift_L2/label: Select
   preset_keys/Tab1/label: ↹
   preset_keys/Return/label: ↵
@@ -68,11 +73,11 @@ patch:
   preset_keys/Menu/label: Lang
   preset_keys/Settings/label: Settings
   preset_keys/Keyboard_default/label: Back
-  preset_keys/Keyboard_numberb/label: ↔
-  preset_keys/liquid_keyboard_clipboard/label: Clip
+  preset_keys/Keyboard_editor/label: ↔
+  preset_keys/clipboard_window/label: Clip
   preset_keys/liquid_keyboard_switch/label: More
-  preset_keys/liquid_keyboard_emoji/label: Emoji
   preset_keys/liquid_keyboard_exit/label: Back
+  preset_keys/liquid_keyboard_tabs/label: More
   preset_keys/Theme_settings/label: Theme
   preset_keys/Color_switch/label: Color
   preset_keyboards/default/ascii_mode: 1
@@ -111,7 +116,7 @@ patch:
     - {click: l, long_click: '|', swipe_down: "=", key_back_color: bh2, key_text_color: th2}
     - {width: 5, key_back_color: bh2, key_text_color: th2}
 
-    - {click: Shift_L, composing: delimiter, hilited_key_back_color: benter, key_back_color: bbs, key_text_color: tbs}
+    - {click: Shift_L, long_click: key_capslock, composing: delimiter, hilited_key_back_color: benter, key_back_color: bbs, key_text_color: tbs}
     - {click: z, long_click: undo, key_back_color: bh3, key_text_color: th3}
     - {click: x, long_click: cut, key_back_color: bh3, key_text_color: th3}
     - {click: c, long_click: copy, key_back_color: bh3, key_text_color: th3}
@@ -124,10 +129,10 @@ patch:
 
     - {click: Keyboard_number, width: 15, key_back_color: bgn, key_text_color: tgn}
     - {click: Menu, long_click: Settings, width: 15, key_back_color: bh4, key_text_color: th4}
-    - {click: space, long_click: Keyboard_numberb, width: 40, key_back_color: bkg, key_text_color: tkg}
-    - {click: liquid_keyboard_switch, long_click: liquid_keyboard_emoji, width: 15, key_back_color: bh4, key_text_color: th4}
+    - {click: space, long_click: Keyboard_editor, width: 40, key_back_color: bkg, key_text_color: tkg}
+    - {click: liquid_keyboard_switch, long_click: clipboard_window, width: 15, key_back_color: bh4, key_text_color: th4}
     - {click: Return, composing: Return1, long_click: Escape, width: 15, key_back_color: benter, key_text_color: tenter}
-  preset_keyboards/numberb/keys:
+  preset_keyboards/editor/keys:
     - {click: select_all}
     - {click: Left1}
     - {click: Up, key_back_color: bgn, key_text_color: tgn}
@@ -178,6 +183,16 @@ patch:
     - {click: Keyboard_default, key_back_color: benter, key_text_color: tenter}
   liquid_keyboard/row: 8
   liquid_keyboard/row_land: 6
-  liquid_keyboard/key_height: 32      #按键高度
-  liquid_keyboard/key_height_land: 32 #横屏模式按键高度
-  liquid_keyboard/single_width: 40    #single类型的按键宽度
+  liquid_keyboard/key_height: 32
+  liquid_keyboard/key_height_land: 32
+  liquid_keyboard/single_width: 40
+  tool_bar/buttons:
+    - foreground:
+        style: "ic@keyboard_close"
+        fg_normal: candidate_text_color
+      action: Hide
+    - foreground:
+        option_styles: ["中", "A"]
+        font_size: 18
+        padding: 10
+      action: Mode_switch
